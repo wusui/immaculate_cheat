@@ -16,7 +16,7 @@ def get_others():
     """
     Old players who played for 8+ current MLB teams
     """
-    return ['dahlgba01', 'kuzavbo01', 'phillda01', 'wrighbi01']
+    return ['dahlgba01', 'kuzavbo01', 'phillda01', 'wightbi01']
 
 def get_requests():
     """
