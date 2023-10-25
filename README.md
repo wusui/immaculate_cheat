@@ -23,4 +23,4 @@ October 24, 2023.
  
  Get_everybody.py reads https://www.baseballreference.com/leaders/leaders_most_franchises.shtml and produces a list of players (named by a portion of the url for their page).  The code handles players since 1950 in addition to players listed separately in the get_others() function.
 
-Get_player_teams.py writes a dict to plyr_info.json that contains lists of teams that players have played for indexed by player-id.  It scrapes the baseball-reference website and so contains code that slows down the requests so that the website does not shut the connection down because it is comunicating with a bot.
+Get_player_teams.py writes a dict to plyr_info.json that contains lists of teams that players have played for indexed by player-id.  It scrapes the baseball-reference website and so contains code that slows down the requests so that the website does not shut the connection down because it is communicating with a bot.
