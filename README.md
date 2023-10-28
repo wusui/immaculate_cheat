@@ -14,13 +14,18 @@ For example, let's say I that out of the list of players who played for eight or
 
 Rather than functioning like a traditional README.md document, I am going to treat this file like a running diary of progress that I make toward this goal.
 
-## FIRST CODE CHECKIN
+## FIRST CODE CHECKIN (SKIP IF NOT INTERESTED IN CODE)
 
 October 24, 2023.
 
  - get_everybody.py
  - get_player_teams.py
  
- Get_everybody.py reads https://www.baseballreference.com/leaders/leaders_most_franchises.shtml and produces a list of players (named by a portion of the url for their page).  The code handles players since 1950 in addition to players listed separately in the get_others() function.
+Get_everybody.py reads https://www.baseballreference.com/leaders/leaders_most_franchises.shtml and produces a list of players (named by a portion of the url for their page).  The code handles players since 1950 in addition to players listed separately in the get_others() function.
 
 Get_player_teams.py writes a dict to plyr_info.json that contains lists of teams that players have played for indexed by player-id.  It scrapes the baseball-reference website and so contains code that slows down the requests so that the website does not shut the connection down because it is communicating with a bot.
+
+### SECOND CODE CHECKIN (SKIP IF NOT INTERESTED IN CODE)
+
+October 28, 2023.
+
