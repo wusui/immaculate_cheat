@@ -25,7 +25,28 @@ Get_everybody.py reads https://www.baseballreference.com/leaders/leaders_most_fr
 
 Get_player_teams.py writes a dict to plyr_info.json that contains lists of teams that players have played for indexed by player-id.  It scrapes the baseball-reference website and so contains code that slows down the requests so that the website does not shut the connection down because it is communicating with a bot.
 
-### SECOND CODE CHECKIN (SKIP IF NOT INTERESTED IN CODE)
+## SECOND CODE CHECKIN (SKIP IF NOT INTERESTED IN CODE)
 
 October 28, 2023.
 
+- find_candidates.py
+- analyze.py
+ 
+Find_candidates.py is the primary search script.  The algorithm used is described in the comments for try_to_find_18().
+
+Analyze.py reinterprets the find_candidates.py data.  This was originally intended to be more automated but I think human intervention is necessary at this point.
+
+## STATUS SO FAR
+
+October 28, 2023.
+
+After further analysis, it appears that this problem is tougher than I imagined.  I can either do the smart thing and not waste any more time and effort on this, or I can blindly charge into trying some desparate attempts at finding a solution.  Since you read this far, I think that you've figured out what path I chose...
+
+Anyway, after looking at the results of scripts, I manually ran https://www.baseball-reference.com/friv/players-who-played-for-multiple-teams-franchises.fcgi on portions of the remaining team pairs and found that many of the four team combos that would make this work do not exist for any major league player.  So pivoting again, I found a list 18 players that only have one team pair (KCR-MIA) missing.  I will now try the following plan:
+
+- Find all players in the 8-team minimum set of data that have played for both KCR and MIA.  Try each one individually in the 18 player list.
+- For each of these 19 player lists, see if any of the players can be removed (Possible but not likely, since an solution from the 8-team minimum list should have been found already).
+- Assuming the above step fails, pull all two player combinations and see if there is a reasonable list of unpaired team combinations.
+- For any set of teams remaining from a list that matches the above condition, search the entire mlb database for any player that can replace that set.
+
+This may seem like a little bit of hand waving, and it honestly is.  How I proceed from here is dependent on how this goes.
