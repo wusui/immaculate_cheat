@@ -50,3 +50,13 @@ Anyway, after looking at the results of scripts, I manually ran https://www.base
 - For any set of teams remaining from a list that matches the above condition, search the entire mlb database for any player that can replace that set.
 
 This may seem like a little bit of hand waving, and it honestly is.  How I proceed from here is dependent on how this goes.
+
+## LAST ATTEMPT
+
+October 29, 2023.
+
+I'm not gonna lie, that attempt in the previous section went nowhere fast.  So I'm now going for a random approach to find any 18 player solution.
+
+I will still aim to find 17 players that will cover most of the team pair combinations and see if I can find a player outside my player list to fill in the 18th slot.  I'll probably adopt some sort of hybrid between my previous find_candidates.py code and random guessing, but instead of checking all combos with three players remaining I will randomly try players with about six remaining (It would be too computationally intensive to try all combinations at this point).
+
+Note that since this will involve some random guessing, I have no way of knowing whether or not this will ever work, and if it fails the first time it is possible that it may work the second time.  I will probably try a couple of million guesses each time I run.  I can retry running this if it fails and so I probably will make this my last attempt at coding a solution.  I can continue to take guesses and maybe tweak my parameters after that if I think there's a solution possible.
