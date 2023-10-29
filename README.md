@@ -45,7 +45,7 @@ After further analysis, it appears that this problem is tougher than I imagined.
 Anyway, after looking at the results of scripts, I manually ran https://www.baseball-reference.com/friv/players-who-played-for-multiple-teams-franchises.fcgi on portions of the remaining team pairs and found that many of the four team combos that would make this work do not exist for any major league player.  So pivoting again, I found a list 18 players that only have one team pair (KCR-MIA) missing.  I will now try the following plan:
 
 - Find all players in the 8-team minimum set of data that have played for both KCR and MIA.  Try each one individually in the 18 player list.
-- For each of these 19 player lists, see if any of the players can be removed (Possible but not likely, since an solution from the 8-team minimum list should have been found already).
+- For each of these 19 player lists, see if any of the players can be removed (Possible but not likely, since any solution from the 8-team minimum list should have been found already).
 - Assuming the above step fails, pull all two player combinations and see if there is a reasonable list of unpaired team combinations.
 - For any set of teams remaining from a list that matches the above condition, search the entire mlb database for any player that can replace that set.
 
